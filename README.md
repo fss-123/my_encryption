@@ -36,24 +36,3 @@ DSA: NIST 标准数字签名算法。
 SHA-256: 实现了标准的 Init-Update-Final 流式处理架构。
 
 HMAC-SHA256: 实现了基于哈希的消息认证码，保障消息完整性与真实性。
-
-MyCryptoLib/
-├── include/          # 头文件 (接口声明)
-│   ├── aes.h
-│   ├── des.h
-│   ├── rsa.h
-│   ├── ecc.h
-│   ├── utils.h       # 核心数学库与辅助函数声明
-│   └── ...
-├── src/              # 源文件 (算法实现)
-│   ├── aes.cpp
-│   ├── des.cpp
-│   ├── rsa.cpp
-│   ├── utils.cpp     # 模幂、GCD、位操作的具体实现
-│   └── ...
-├── test/             # 单元测试 (Unit Tests)
-│   ├── test_aes.cpp
-│   ├── test_rsa.cpp
-│   └── ...
-├── my_encryption.cpp # 主程序入口 (交互式菜单)
-└── README.md         # 项目文档
